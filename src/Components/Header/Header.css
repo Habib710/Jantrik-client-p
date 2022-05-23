@@ -1,0 +1,25 @@
+.Header-span{
+    color: rgb(215, 224, 98);
+}
+.Hading-css{
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+.nav-css a{
+    text-decoration: none;
+    
+    padding: 6px 20px;
+    font-weight: 600;
+    font-size: 22px;
+    border-radius: 20px 0px 20px 0px;
+}
+.btn-singout-css{
+    background-color: rgb(215, 224, 98);
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 20px 20px 20px 20px;
+
+}

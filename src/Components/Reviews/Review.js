@@ -6,7 +6,7 @@ const Review = (props) => {
      
     const {name,_id,rating,about}=props.data;
     return (
-        <div className='reviews-css '>
+        <div className='reviews-csss '>
 
             <div className=''>
                 <div className=' '>

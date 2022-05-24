@@ -9,6 +9,7 @@
    
 }
 .banner-heading{
+   
     
     display: flex;
     padding: 200px  100px;
@@ -93,6 +94,11 @@
    
 
 }
+.services-div{
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+}
 
 
 
@@ -130,6 +136,12 @@
         gap: 30px;
         grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     }
+    .services-div{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    }
+    
     
 
     

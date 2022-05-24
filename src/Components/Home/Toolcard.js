@@ -1,10 +1,11 @@
 
 import React from 'react'
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Toolcard = (props) => {
-  const { name, _id, price, pic, available, minimum, about } = props.data
+  const { name, _id, price, pic, available, minimum, about } = props.data;
   return (
     <div className=''>
       <Card className='card-css-div' style={{ width: '100%'}}>
@@ -17,7 +18,8 @@ const Toolcard = (props) => {
           <Card.Text>
             {about}
           </Card.Text>
-          <button className='btn btn-css'>Book Now</button>
+          <Link to={/purchase/+ _id}>
+          <button className='btn btn-css'>Book Now</button></Link>
          
         </Card.Body>
       </Card>

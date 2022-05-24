@@ -15,6 +15,9 @@ import img1 from '../../img/1.webp'
 import img2 from '../../img/2.webp'
 import img3 from '../../img/3.webp'
 import img4 from '../../img/4.webp'
+import big from '../../img/tab-banner.webp'
+import work from '../../img/2 (1).webp'
+import work2 from '../../img/1 (3).webp'
 
 const Home = () => {
   const [tools, settools] = useState([])
@@ -111,6 +114,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
 
       <h1 className="text-center">Reviews</h1>
       <section className="reviews-css my-5 p-3">
@@ -119,6 +123,11 @@ const Home = () => {
             <Review key={review._id} data={review}></Review>
           ))}
         </div>
+      </section>
+      <section>
+        <img width='100%' src={big} alt="" />
+
+
       </section>
       {/* our service................ */}
       <section className="text-center my-3">
@@ -155,10 +164,23 @@ const Home = () => {
         </div>
       </section>
       {/* last section on home pages */}
-      <section>
+      <section className='container  my-5 py-3'>
+       <h1 className='text-center'> JANTRIK RESPON</h1>
+        <div className='custom-css-lastdiv'>
+          <div className='p-5 p-div'>
+            <p className=''>Jantrik consectetur adipisicing elit. Rerum ea commodi, sed aliquam id recusandae ex alias quis, officiis ut quae magnam. Porro quod incidunt nesciunt, pariatur vitae at veritatis.officiis ut quae  quod incidunt nesciunt, pariatur vitae at veritatisofficiis ut quae magnam. quod incidunt nesciunt, pariatur vitae at veritatisofficiis ut quae magnam.  nesciunt, pariatur vitae at veritatisofficiis ut quae magnam. , pariatur vitae at veritatisofficiis ut quae magnam. Porro quod incidunt nesciunt, pariatur vitae at veritatis</p>
+            <div className='custom-css-lastdiv '>
+            <img className='m-2' width='100%'  src={work} alt="" />
+            <img  className='m-2' width='100%'  src={work2} alt="" />
 
+          </div>
+         
 
+          </div>
+         
+        </div>
       </section>
+     
     </div>
   )
 }

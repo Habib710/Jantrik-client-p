@@ -99,6 +99,18 @@
     gap: 35px;
     grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
 }
+.custom-css-lastdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.p-div{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(230, 228, 228);
+    border-left: 15px solid rgb(143, 202, 4);
+
+}
 
 
 
@@ -140,6 +152,10 @@
         display: grid;
         gap: 30px;
         grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    }
+    .custom-css-lastdiv{
+        display: block;
+        
     }
     
     

@@ -23,7 +23,14 @@ const Header = () => {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ms-auto nav-css">
       <CustomLink to='/' >Home</CustomLink>
+      
+      {
+        user?<CustomLink to='dashboard' >Dashboard</CustomLink>:''
+      }
       <CustomLink to='Blogs' >Blogs</CustomLink>
+      
+      <CustomLink to='portfolio' >Portfolio</CustomLink>
+     
       {
           user?<button onClick={singout} className='btn btn-singout-css'>Sign Out</button>
           :

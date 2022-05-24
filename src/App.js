@@ -1,6 +1,7 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
+import Error404 from './Components/404error/Error404';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
@@ -18,6 +19,7 @@ function App() {
       </Login>
         }>
         </Route>
+        <Route path='*' element={<Error404></Error404>}></Route>
       </Routes>
 
      

@@ -80,6 +80,19 @@
     background:linear-gradient(rgba(114, 113, 113, 0.185),rgba(168, 167, 167, 0.795)),  url('../../../public/imgs/img/40.webp');
 
 }
+.review-div{
+ 
+    
+    display: grid;
+    gap: 35px;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+}
+.reviews-css{
+    box-shadow: none;
+    border: none;
+   
+
+}
 
 
 
@@ -109,9 +122,15 @@
     }
     .map-css{
         display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(50px, 1fr) );
-        gap: 35px;
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+        gap: 20px;
     }
+    .review-div{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    }
+    
 
     
 }

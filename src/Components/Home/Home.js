@@ -5,8 +5,11 @@ import Toolcard from './Toolcard';
 import { CountUp } from 'use-count-up';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoneyBills, faStar, faTools, faUsers } from '@fortawesome/free-solid-svg-icons';
+import Review from '../Reviews/Review';
 
 const Home = () => {
+
+
 
     const [tools,settools]=useState([])
 
@@ -14,6 +17,18 @@ const Home = () => {
         fetch('data.json')
         .then(res=>res.json())
         .then(data=>settools(data))
+
+
+    },[])
+
+    // reviews.....................
+    const [reviews,setreviews]=useState([])
+    useEffect(()=>{
+      fetch('review.json')
+      .then(res=>res.json())
+      .then(data=>setreviews(data))
+
+
 
 
     },[])
@@ -82,6 +97,20 @@ const Home = () => {
                 </div>
                 </div>
                 </div>
+
+
+            </section>
+
+            <h1 className='text-center'>Reviews</h1>
+            <section className='reviews-css my-5 p-3'>
+              
+              <div className='review-div container my-5 lg-p-5'>
+                {
+                  reviews.map(review=><Review key={review._id} data={review}></Review>)
+                }
+
+
+              </div>
 
 
             </section>

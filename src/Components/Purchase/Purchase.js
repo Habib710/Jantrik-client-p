@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import auth from '../../friebase.init';
 
@@ -19,7 +20,7 @@ const Purchase = () => {
     },[id]);
     
     
-    const {name,price, available, minimum}=item;
+    const {name,price,pic, available, minimum}=item;
    
     
 
@@ -68,8 +69,41 @@ const Purchase = () => {
 
 
     }
+    const [email1,setemail1]=useState([]);
+    const [tool1,settool1]=useState([]);
+    const [price1,setprice1]=useState([]);
+    const [quantity1,setquantity1]=useState([]);
+    const [address1,setaddress1]=useState([]);
+    const [user1,setuser1]=useState([]);
+    const [phone1,setphone1]=useState([]);
+
+    const order={email1,tool1,price1,quantity1,address1,user1,phone1};
+    
+
+
+    const submited=event=>{
+        event.preventDefault();
+
+        setemail1(event.target.email.value);
+        settool1(event.target.tool.value);
+       setprice1(event.target.price.value);
+        setaddress1(event.target.address.value);
+        setquantity1(event.target.quantity.value);
+        setuser1(event.target.user.value);
+        setphone1(event.target.phone.value);
+
+
+
+    }
+    console.log(order);
+    
+
+
+
+    
    
    
+  
 
     
     return (
@@ -79,7 +113,7 @@ const Purchase = () => {
                 <h5>Email : {user.email}</h5>
 
             </div>
-          <div className='d-flex justify-content-around'>
+          <div className='main-div-css'>
 
             <div className='dtails-div text-center'>
             <h2>Tool's Name : {name}</h2>
@@ -124,17 +158,43 @@ const Purchase = () => {
             <div className='dtails-div'>
                 <div>
                     <h1>Your Order</h1>
+                    
                 <h3>Tool's Name : {name}</h3>
                 <h3>Quantity : {final} unit</h3>
 
                 <h3>Total Price: $ {newprice}</h3>
 
                 </div>
-                <form >
-                    
 
 
-                </form>
+                <div className='text-center my-5'>
+                    <form className='' onSubmit={submited}>
+                  <label>Name </label><br />
+                    <input disabled className='data-form' value={user?.displayName} name='user' type="text" /><br />
+                    <label>Email </label><br />
+                    <input disabled className='data-form' value={user?.email} name='email' type="email" /><br />
+                    <label className='text-left'>Tool's </label><br />
+                        <input disabled className='data-form' value={name} name='tool' type="text" /><br />
+                        <label>Quantity </label><br />
+                        
+                        <input disabled className='data-form' value={final} name='quantity' type="number" />
+                        <br />
+                        <label>Total Price </label><br />
+                        <input required  className='data-form' value={newprice} name='price' placeholder='Total Price ( Click set Order)' type="number" />
+                        <br />
+                        <label>Address </label><br />
+              
+                        <input required className='data-form'  type="text" name='address' placeholder='address'/>
+                        <br />
+                        <label>Phone </label><br />
+                        <input  required className='data-form' type="number" name='phone' placeholder='Mobile Number'/>
+                        <br />
+                        <input className='data-form-btn text-center' type="submit" />
+
+
+                    </form>
+        
+                </div>
 
            
             </div>

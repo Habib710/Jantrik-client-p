@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Route, Routes } from 'react-router-dom'
 import Error404 from './Components/404error/Error404'
+import Blog from './Components/Blogs/Blog'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import Home from './Components/Home/Home'
+import Dashboard from './Components/Dashboard/Dashboard'
 import Login from './Components/Login/Login'
 import Purchase from './Components/Purchase/Purchase'
 import Requeir from './RequirAuth/Requeir'
@@ -23,6 +25,8 @@ function App() {
             </Requeir>
           }
         ></Route>
+        <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
+        <Route path='blogs' element={<Blog></Blog>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>

@@ -211,7 +211,7 @@ const Purchase = () => {
                 className="data-form"
                 type="text"
                 name="address"
-                placeholder="address"
+                placeholder="Your Address"
               />
               <br />
               <label>Phone </label>
@@ -221,7 +221,7 @@ const Purchase = () => {
                 className="data-form"
                 type="number"
                 name="phone"
-                placeholder="Mobile Number"
+                placeholder="Your Mobile Number"
               />
               <br />
               <br />

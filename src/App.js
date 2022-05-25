@@ -9,6 +9,7 @@ import Dashboard from './Components/Dashboard/Dashboard'
 import Login from './Components/Login/Login'
 import Purchase from './Components/Purchase/Purchase'
 import Requeir from './RequirAuth/Requeir'
+import Portfolio from './Components/Portfolio/Portfolio'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         ></Route>
         <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='blogs' element={<Blog></Blog>}></Route>
+        <Route path="Portfolio" element={<Portfolio></Portfolio>}></Route>
         <Route path="login" element={<Login></Login>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>

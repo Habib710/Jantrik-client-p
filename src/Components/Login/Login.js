@@ -143,9 +143,9 @@ const Login = () => {
 
             <div id='login' className=' container  form-custom-css'>
             
-            <Form onSubmit={login} className='form-input-css'>
+            <Form onSubmit={login} className='formss-input-css'>
             <h3>Login</h3>
-                <div className='input-css'>
+                <div className='inputss-css'>
 
 
                 <span className='d-flex align-items-center  justify-content '><FontAwesomeIcon className='mt-4 me-2' icon={faEnvelope} /> 
@@ -193,9 +193,9 @@ const Login = () => {
 
         <div id='signin'  className='  container singup-custom  form-custom-css '>
             
-            <Form onSubmit={onsubmit} className='form-input-css'>
+            <Form onSubmit={onsubmit} className='formss-input-css'>
             <h3>Sign Up</h3>
-                <div className='input-css'>
+                <div className='inputss-css'>
                 <span className='d-flex align-items-center   '><FontAwesomeIcon className='mt-4 me-2' icon={faUser} /> 
                  <input onBlur={NameHendle} type="text" placeholder=' Your Name'/></span>
 

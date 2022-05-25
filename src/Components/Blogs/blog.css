@@ -1,3 +1,36 @@
 .odd-section-css{
     background-color: rgba(213, 241, 177, 0.856);
 }
+.mypic-css{
+    width: 290px;
+    
+
+}
+.mypic-css img{
+    border-radius: 40px 0px 40px 0px;
+    box-shadow: rgba(182, 245, 109, 0.849) 0px 54px 55px, rgba(34, 32, 32, 0.849) 0px -12px 30px, rgba(61, 59, 59, 0.199) 0px 4px 6px, rgba(164, 243, 18, 0.753) 0px 12px 13px, rgba(248, 248, 248, 0.89) 0px -3px 5px;
+}
+.port-css{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+
+@media screen and (max-width:450px) {
+    .port-css{
+        display: block;
+        margin: 10px;
+        
+    }
+    .mypic-css{
+        margin-top: 35px;
+    }
+
+
+
+
+}

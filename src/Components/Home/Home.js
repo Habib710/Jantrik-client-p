@@ -23,7 +23,7 @@ const Home = () => {
   const [tools, settools] = useState([])
 
   useEffect(() => {
-    fetch('data.json')
+    fetch('http://localhost:3300/alltool')
       .then((res) => res.json())
       .then((data) => settools(data))
   }, [])

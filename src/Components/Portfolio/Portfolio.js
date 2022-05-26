@@ -1,11 +1,12 @@
 import React from 'react';
-import '../Blogs/blog.css'
+import '../Blogs/blog.css';
+import 'animate.css';
 import mypic from '../../img/mynew.jpg'
 
 const Portfolio = () => {
   return (
     <div className="container my-4 p-4">
-      <h1 className="text-center my-5">Welcome To My Portfolio</h1>
+      <h1 className="text-center my-5 animate__animated animate__fadeInUpBig animate__slow 3s">Welcome To My Portfolio</h1>
       <div className='port-css py-3'>
       <div>
           <h2>Mohammad Habibullah</h2>

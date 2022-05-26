@@ -75,10 +75,11 @@
 }
 .back-css{
     display: flex;
+ 
     align-items: center;
     width: 100%;
     min-height: 500px;
-    background:linear-gradient(rgba(114, 113, 113, 0.185),rgba(168, 167, 167, 0.795)),  url('../../../public/imgs/img/40.webp');
+    background:linear-gradient(rgba(153, 151, 151, 0.185),rgba(97, 92, 92, 0.795)),  url('../../../public/imgs/img/40.webp');
 
 }
 .review-div{

@@ -10,6 +10,9 @@ import Login from './Components/Login/Login'
 import Purchase from './Components/Purchase/Purchase'
 import Requeir from './RequirAuth/Requeir'
 import Portfolio from './Components/Portfolio/Portfolio'
+import Orders from './Components/Orders/Orders'
+import Myreviews from './Components/Myreviews/Myreviews'
+import Profile from './Components/Profile/Profile'
 
 function App() {
   return (
@@ -26,7 +29,13 @@ function App() {
             </Requeir>
           }
         ></Route>
-        <Route path='dashboard' element={<Dashboard></Dashboard>}></Route>
+        <Route path='dashboard' element={<Dashboard></Dashboard>}>
+
+          <Route index element={<Orders></Orders>}></Route>
+          <Route path='myreviews' element={<Myreviews></Myreviews>}></Route>
+          <Route path='orders' element={<Orders></Orders>}></Route>
+          <Route path='profile' element={<Profile></Profile>}></Route>
+        </Route>
         <Route path='blogs' element={<Blog></Blog>}></Route>
         <Route path="Portfolio" element={<Portfolio></Portfolio>}></Route>
         <Route path="login" element={<Login></Login>}></Route>

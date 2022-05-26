@@ -15,7 +15,7 @@ const Profile = () => {
     const [infomation,setinfomation]=useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3300/profile")
+        fetch("https://frozen-lowlands-11612.herokuapp.com/profile")
             .then(res => res.json())
             .then(data => setinfomation(data))
 
@@ -43,7 +43,7 @@ const Profile = () => {
     const addprofile=event=>{
         event.preventDefault();
 
-        const url=`http://localhost:3300/profile`;
+        const url=`https://frozen-lowlands-11612.herokuapp.com/profile`;
         fetch(url,{
 
             method:'POST',

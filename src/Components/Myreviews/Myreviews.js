@@ -50,7 +50,7 @@ const Myreviews = () => {
     }
 
    
-    const url=`http://localhost:3300/reviews`;
+    const url=`https://frozen-lowlands-11612.herokuapp.com/reviews`;
     fetch(url,{
 
         method:'POST',

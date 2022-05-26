@@ -13,7 +13,7 @@ const Orders = () => {
 
   const [myorders, setmyorders] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3300/orders')
+    fetch('https://frozen-lowlands-11612.herokuapp.com/orders')
       .then((res) => res.json())
       .then((data) => {
         const mydata = data.filter((myitem) => myitem.email1 === user?.email)
@@ -34,7 +34,7 @@ const Orders = () => {
       confirmButtonText: 'Yes, delete it!',
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `http://localhost:3300/orders/${id}`
+        const url = `https://frozen-lowlands-11612.herokuapp.com/orders/${id}`
         fetch(url, {
           method: 'DELETE',
         })

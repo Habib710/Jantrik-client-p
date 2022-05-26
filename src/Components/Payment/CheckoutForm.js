@@ -12,7 +12,7 @@ const CheckoutForm = (props) => {
   const [clientSecret,setclint]=useState(' ');
   const tools = {price1};
   useEffect(()=>{
-      fetch('http://localhost:3300/payment-inten',{
+      fetch('https://frozen-lowlands-11612.herokuapp.com/payment-inten',{
           method:'POST',
           headers:{
             'content-type':'application/json'

@@ -12,7 +12,7 @@ const Purchase = () => {
 
   const [item, setitem] = useState([])
   useEffect(() => {
-    fetch(`http://localhost:3300/alltool/${id}`)
+    fetch(`https://frozen-lowlands-11612.herokuapp.com/alltool/${id}`)
       .then((res) => res.json())
       .then((data) => setitem(data))
   }, [id])
@@ -78,7 +78,7 @@ const Purchase = () => {
   }
 
   const uptodate = () => {
-    fetch(`http://localhost:3300/orders`, {
+    fetch(`https://frozen-lowlands-11612.herokuapp.com/orders`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

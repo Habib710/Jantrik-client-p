@@ -12,7 +12,7 @@ const Payment = () => {
 
   const [Item, setitem] = useState([])
   useEffect(() => {
-    fetch(`http://localhost:3300/orders/${ids}`)
+    fetch(`https://frozen-lowlands-11612.herokuapp.com/orders/${ids}`)
       .then((res) => res.json())
       .then((data) => setitem(data))
   }, [ids])

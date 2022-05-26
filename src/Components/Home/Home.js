@@ -23,7 +23,7 @@ const Home = () => {
   const [tools, settools] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3300/alltool')
+    fetch('https://frozen-lowlands-11612.herokuapp.com/alltool')
       .then((res) => res.json())
       .then((data) => settools(data))
   }, [])
@@ -31,7 +31,7 @@ const Home = () => {
   // reviews.....................
   const [reviews, setreviews] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3300/reviews')
+    fetch('https://frozen-lowlands-11612.herokuapp.com/reviews')
       .then((res) => res.json())
       .then((data) => setreviews(data))
   }, [])

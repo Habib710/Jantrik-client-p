@@ -164,14 +164,14 @@ const Home = () => {
         </div>
       </section>
       {/* last section on home pages */}
-      <section className='container  my-5 py-3'>
+      <section className='  m-5 py-3'>
        <h1 className='text-center'> JANTRIK RESPON</h1>
         <div className='custom-css-lastdiv'>
           <div className='p-5 p-div'>
             <p className=''>Jantrik consectetur adipisicing elit. Rerum ea commodi, sed aliquam id recusandae ex alias quis, officiis ut quae magnam. Porro quod incidunt nesciunt, pariatur vitae at veritatis.officiis ut quae  quod incidunt nesciunt, pariatur vitae at veritatisofficiis ut quae magnam. quod incidunt nesciunt, pariatur vitae at veritatisofficiis ut quae magnam.  nesciunt, pariatur vitae at veritatisofficiis ut quae magnam. , pariatur vitae at veritatisofficiis ut quae magnam. Porro quod incidunt nesciunt, pariatur vitae at veritatis</p>
-            <div className='custom-css-lastdiv '>
-            <img className='m-2' width='100%'  src={work} alt="" />
-            <img  className='m-2' width='100%'  src={work2} alt="" />
+            <div className='custom-css-lastdiv  '>
+            <img className='m-2' width='80%'  src={work} alt="" />
+            <img  className='m-2' width='80%'  src={work2} alt="" />
 
           </div>
          

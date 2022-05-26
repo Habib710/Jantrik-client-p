@@ -1,0 +1,52 @@
+.delete-btn-css-order button{
+    
+    background-color: rgb(243, 94, 94);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px 0px 20px 0px;
+   
+}
+.payment-css-btn a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(185, 204, 100);
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px 0px 20px 0px;
+ 
+
+}
+
+@media screen and (max-width:450px) {
+    .delete-btn-css-order button{
+    
+        background-color: rgb(243, 94, 94);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 20px 0px 20px 0px;
+        margin-top: 0px;
+    }
+
+    .payment-css-btn a{
+        text-decoration: none;
+        color: black;
+        background-color: rgb(185, 204, 100);
+        padding: 8px 5px;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 20px 0px 20px 0px;
+     
+    
+    }
+
+
+
+
+}

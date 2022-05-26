@@ -11,3 +11,24 @@
     border-radius: 20px 0px 20px 0px;
     
 }
+.mydashbord{
+    display: flex;
+}
+
+
+
+
+@media screen and (max-width:450px) {
+
+    .mydashbord{
+        display: block;
+    }
+    .custom-side-bar{
+        width: 100%;
+        background-color: rgba(34, 33, 33, 0.877);
+        padding: 25px;
+    }
+
+
+
+}

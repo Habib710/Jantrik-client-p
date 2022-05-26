@@ -7,7 +7,7 @@ import './Dashboard.css'
 const Dashboard = () => {
   return (
     <div>
-      <div className="d-flex ">
+      <div className="mydashbord ">
         <div className="text-center custom-side-bar">
           <Nav defaultActiveKey="/home" className="flex-column">
             <CustomLink to="orders">My Orders</CustomLink>

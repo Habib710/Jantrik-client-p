@@ -53,7 +53,7 @@ function App() {
         <Route path="Portfolio" element={<Portfolio></Portfolio>}></Route>
         
         <Route path="login" element={<Login></Login>}></Route>
-        <Route path="payment" element={<Payment></Payment>}></Route>
+        <Route path="payment/:ids" element={<Payment></Payment>}></Route>
         <Route path="*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>

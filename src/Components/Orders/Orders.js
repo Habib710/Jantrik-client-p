@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { Table } from 'react-bootstrap'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import {  useNavigate } from 'react-router-dom'
+import {  Link, useNavigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import auth from '../../friebase.init'
 import './order.css'
 
 const Orders = () => {
-  const naviget=useNavigate();
+ 
   const [user] = useAuthState(auth)
+  
 
   const [myorders, setmyorders] = useState([])
   useEffect(() => {
@@ -19,7 +20,8 @@ const Orders = () => {
 
         setmyorders(mydata)
       })
-  }, [user?.email])
+  }, [user?.email]);
+  const naviget=useNavigate();
 
   const deleted = (id) => {
     Swal.fire({
@@ -46,12 +48,13 @@ const Orders = () => {
       }
     })
   }
-
-  const gotopayment=()=>{
-
-    naviget('/payment')
+  const delivery=id=>{
+    naviget(`/payment/${id}`)
+    
+    
   }
 
+ 
   
 
   return (
@@ -74,7 +77,9 @@ const Orders = () => {
                   </td>
                   <td className="p-lg-5">
                   
-                    <button  onClick={gotopayment} className='payment-css-btn '>Click For Payment</button>
+                  <button className='payment-css-btn' onClick={() => delivery(myorder._id)} >
+                      pament
+                    </button>
 
                   </td>
                   <td className="delete-btn-css-order p-lg-5 ">

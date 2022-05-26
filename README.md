@@ -1,23 +1,24 @@
-# Getting Started with Create React App
+# Welcome TO  JANTRIK
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## LIVE Website Link : [https://deponic-62e80.web.app/home](https://deponic-62e80.web.app/home).
 
-## Available Scripts
+## Description about JANTRIK
 
-In the project directory, you can run:
+A tool is an object that can extend an individual's ability to modify features of the surrounding environment. Although many animals use simple tools, only human beings, whose use of stone tools dates back hundreds of millennia, have been observed using tools to make other tools Specifically, WMS systems are designed to support the needs of an entire global supply chain, including distribution, manufacturing, asset-intensive, and service businesses.
 
-### `npm start`
+##  Features and Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Bootstarp 5
+* React js
+* REact Router
+* node.js 
+* MOngodb
+* Firebase
+* Heroku deployment
+* Jwt
+* REACT HOOK FORM 
+* sweetalrt2
+ 
 
 ### `npm run build`
 

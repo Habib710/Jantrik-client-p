@@ -1,0 +1,13 @@
+.custom-side-bar{
+    width: 20%;
+    background-color: rgba(34, 33, 33, 0.877);
+    padding: 25px;
+}
+.custom-side-bar a{
+    text-decoration: none;
+    padding: 8px 20px;
+    font-weight: 500;
+    font-size: 22px;
+    border-radius: 20px 0px 20px 0px;
+    
+}

@@ -29,13 +29,21 @@ function App() {
             </Requeir>
           }
         ></Route>
-        <Route path='dashboard' element={<Dashboard></Dashboard>}>
+        
+        <Route path='dashboard' element={
+        <Requeir>
+        <Dashboard></Dashboard>
+        </Requeir>
+        
+        }>
 
           <Route index element={<Orders></Orders>}></Route>
           <Route path='myreviews' element={<Myreviews></Myreviews>}></Route>
           <Route path='orders' element={<Orders></Orders>}></Route>
           <Route path='profile' element={<Profile></Profile>}></Route>
+
         </Route>
+       
         <Route path='blogs' element={<Blog></Blog>}></Route>
         <Route path="Portfolio" element={<Portfolio></Portfolio>}></Route>
         <Route path="login" element={<Login></Login>}></Route>

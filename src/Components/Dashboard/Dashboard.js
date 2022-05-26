@@ -1,29 +1,26 @@
-
 import React from 'react'
-import {Nav } from 'react-bootstrap'
-import { Link, Outlet } from 'react-router-dom'
+import { Nav } from 'react-bootstrap'
+import { Outlet } from 'react-router-dom'
+import CustomLink from '../Customs/CustomLink'
+import './Dashboard.css'
 
 const Dashboard = () => {
   return (
-      <div>
-    <div className='d-flex '>
-        <div className='bg-danger w-25'>
-      <Nav defaultActiveKey="/home" className="flex-column">
-        <Link to='orders'>My Orders</Link>
-        <Link to='myreviews'>My Reviews</Link>
-        <Link to='profile'>My Profile</Link>
-        
-          
-        
-      </Nav>
-      </div>
-      <div className='bg-primary w-75'>
-          <h1>Dasboard</h1>
+    <div>
+      <div className="d-flex ">
+        <div className="text-center custom-side-bar">
+          <Nav defaultActiveKey="/home" className="flex-column">
+            <CustomLink to="orders">My Orders</CustomLink>
+            <br />
+            <CustomLink to="myreviews">Add Reviews</CustomLink>
+            <br />
+            <CustomLink to="profile">My Profile</CustomLink>
+          </Nav>
+        </div>
+        <div className=" w-100 text-center">
           <Outlet></Outlet>
-
-
+        </div>
       </div>
-    </div>
     </div>
   )
 }

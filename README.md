@@ -1,6 +1,6 @@
 # Welcome TO  JANTRIK
 
-## LIVE Website Link : [https://deponic-62e80.web.app/home](https://deponic-62e80.web.app/home).
+## LIVE Website Link : [https://jantrik-d4cca.web.app/](https://jantrik-d4cca.web.app/).
 
 ## Description about JANTRIK
 

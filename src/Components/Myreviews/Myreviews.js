@@ -29,6 +29,26 @@ const Myreviews = () => {
 
    const submited=event=>{
     event.preventDefault();
+    if(rating>5 || rating<1){
+
+        return Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Rating should be 1 to 5',
+            
+          })
+
+    }
+    if(about.length<6){
+        return Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Comment should be more then 3 words',
+            
+          })
+
+    }
+
    
     const url=`http://localhost:3300/reviews`;
     fetch(url,{

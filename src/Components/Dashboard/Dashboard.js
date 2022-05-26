@@ -17,7 +17,7 @@ const Dashboard = () => {
             <CustomLink to="profile">My Profile</CustomLink>
           </Nav>
         </div>
-        <div className=" w-100 text-center">
+        <div className=" w-100 text-center my-5">
           <Outlet></Outlet>
         </div>
       </div>

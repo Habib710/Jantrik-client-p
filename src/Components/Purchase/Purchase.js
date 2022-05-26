@@ -93,8 +93,9 @@ const Purchase = () => {
       })
 
     Swal.fire('Thank You', 'Your Order Completed Successfully ', 'success')
+    
   }
-
+ 
   return (
     <div className="p-3">
       <div className="text-center py-5">

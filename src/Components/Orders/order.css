@@ -9,8 +9,9 @@
     border-radius: 20px 0px 20px 0px;
    
 }
-.payment-css-btn a{
-    text-decoration: none;
+.payment-css-btn{
+    border: none;
+   
     color: black;
     background-color: rgb(185, 204, 100);
     padding: 8px 15px;
@@ -19,6 +20,9 @@
     border-radius: 20px 0px 20px 0px;
  
 
+}
+.orderdiv{
+    min-height: 50vh;
 }
 
 @media screen and (max-width:450px) {
@@ -33,9 +37,12 @@
         border-radius: 20px 0px 20px 0px;
         margin-top: 0px;
     }
+    .orderdiv{
+        min-height: 25vh;
+    }
 
-    .payment-css-btn a{
-        text-decoration: none;
+    .payment-css-btn{
+       
         color: black;
         background-color: rgb(185, 204, 100);
         padding: 8px 5px;
